@@ -5,6 +5,16 @@
 About
 {% endblock title %}
 
+
+{% block paralax %}
+<div class="parallax-mirror"
+     style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 500px; width: 1903px;">
+    <img class="parallax-slider" src="{% static 'img/1920x1080/01.jpg' %}"
+         style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -285px; left: 0px; height: 1070px; width: 1903px; max-width: none;">
+</div>
+{% endblock paralax %}
+
+
 {% block content %}
 <!--========== PARALLAX ==========-->
         <div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'img/1920x1080/01.jpg' %}">
